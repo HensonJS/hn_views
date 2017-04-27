@@ -6,4 +6,6 @@ class JsonViewer extends Marionette.LayoutView
   serializeData: -> # Returns an array of JSON, styled w/ numbered lines
     return { json: JSON.stringify(@model.toJSON(), null, 2).split("\n") }
 
+# # # # #
+
 module.exports = JsonViewer
